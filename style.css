@@ -6,4 +6,32 @@
 body {
     margin: 0;
     padding: 0;
+
+    text-align: center;
+
+    background-size: repeat;
+}
+
+h3 {
+    line-height: 0;
+    margin-bottom: 80px;
+}
+
+.builder {
+    padding: 5%;
+    padding-top: 30px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: nowrap;
+
+    margin: auto;
+}
+
+.buttons button {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    padding: 5px;
 }

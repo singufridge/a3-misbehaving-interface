@@ -15,19 +15,34 @@
 
     <div class="builder">
       <h1>Build-A-Site</h1>
-      <h4>
+      <h3>
         Build and customize your own website! Easy and simple :D
-      </h4>
+      </h3>
       
-      <h4>First, let's choose a background colour:</h4>
-      <div>
-        <button onclick="">Red</button>
-        <button onclick="">Orange</button>
-        <button onclick="">Yellow</button>
-        <button onclick="">Green</button>
-        <button onclick="">Blue</button>
-        <button onclick="">Purple</button>
-        <button onclick="">Violet</button>
+      <h4>First, let's choose a background:</h4>
+      <div class="buttons">
+        <button onclick="bgChange('img.freepik.com/premium-vector/red-word-text-red-color-white-background_956226-107.jpg?semt=ais_hybrid&w=740&q=80')">
+          Red</button>
+
+        <button onclick="bgChange('www.quanta.org/orange/orange.jpg')">
+          Orange</button>
+
+        <button onclick="bgChange('upload.wikimedia.org/wikipedia/commons/3/3d/Sun_with_sunglasses.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original')">
+          Yellow</button>
+
+        <button onclick="greenBtn()">
+          Green</button>
+
+        <div id="blue-btn-div">
+          <button id="blue-btn" onclick="btnReplace()">
+          Blue</button>
+        </div>
+
+        <button onclick="">
+          Purple</button>
+
+        <button onclick="">
+          Violet</button>
       </div>
 
     </div>
