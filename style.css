@@ -1,0 +1,9 @@
+:root {
+    --primary-bg-col: #e3ffd0;
+    --primary-text-col: #1f1835;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
