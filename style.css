@@ -1,3 +1,4 @@
+/* general selectors */
 :root {
     --primary-bg-col: #e3ffd0;
     --primary-text-col: #1f1835;
@@ -14,11 +15,20 @@ body {
 
 h3 {
     line-height: 0;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 
+h4 {
+    padding-top: 40px;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* classes */
 .builder {
-    padding: 5%;
+    padding: 20%;
     padding-top: 30px;
 }
 
@@ -26,7 +36,7 @@ h3 {
     display: flex;
     flex-wrap: nowrap;
 
-    margin: auto;
+    justify-content: center;
 }
 
 .buttons button {

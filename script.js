@@ -13,10 +13,10 @@ document.getElementById("blue-btn").addEventListener("click", btnReplace)
 function btnReplace() {
     document.getElementById("blue-btn").remove();
 
-    const blueImg = new Image(100, 100);
+    const blueImg = new Image(30, 27.6);
 
     blueImg.src = 'https://www.boeschbodenspies.com/wp-content/uploads/product-blueberry.png';
     blueImg.alt = 'Blueberry';
 
-    document.body.appendChild(blueImg);
+    document.getElementById("blue-btn-div").appendChild(blueImg);
 }
