@@ -44,13 +44,15 @@
 
       <h4>Great! Now let's choose a navigation bar:</h4>
       <div class="nav-picker">
-        <form>
-          <label for="nav-type">Enter a prompt for what style of navbar you want, our state-of-the-art builder will generate one for you:</label><br>
-          <input type="text" id="nav-type" name="nav-type" placeholder="eg. simple, stylish, blunt, rounded, etc." style="width: 40%;">
-          <br>
+        <form id="nav-picker-form">
+            <label for="nav-type">Enter a prompt for what style of navbar you want, our state-of-the-art builder will generate one for you:</label><br>
+
+            <input type="text" id="nav-type" name="nav-type" placeholder="eg. simple, stylish, blunt, rounded, etc." style="width: 40%;">
+            <br>
+
+            <button onclick="errMsg('err-navbar')">Generate my Navbar!</button>
+            <p id="err-navbar">Oops. Our AI systems couldn't understand your prompt. We have gone ahead and generated a standard navbar for you.</p>
         </form>
-        <button onclick="errMsg('err-navbar')">Generate my Navbar!</button>
-          <p id="err-navbar">Oops. Looks like your prompt overloaded our AI systems. We have gone ahead and generated a standard navbar for you.</p>
       </div>
     </div>
 

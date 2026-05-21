@@ -30,7 +30,19 @@ document.getElementById("purple-btn").addEventListener("click", function() {
     document.getElementById("purple-btn").innerHTML = 'P̴̢̨̧̧̻̼̭͍̣̘̣̥̖̂̓́̀͆̊̃͌̎̈̌̀̀̾̈́͛̈́͑͌̒̕͜͝ͅư̵͎̓͛̆̃́̿̇̋̊̀͗̄̋̿͊͘͘͜r̵̢̮̯̱̪͔̖̫͇̣͇̭̻̹̫̗̙̯͚͕̜̻̻̹̭̹̫͓͖̤͊̋̆̓͒̽̏̋̀̇̃͛̌̀̂́͑͗̎̚͠͠ͅp̷̢̢̢̡̨̡̡̗̻̘͉͈̟̥̯̘̱͓̗͈̘̬͙̜̹̳͓̮͙̗̼͚̝̂͐̍̽͐̒̀̑̎̊́̄́̊̎̎̽̀̄͗̚̚̕͜͠͠l̴͕̙̑́̍̈́̈̿̐̐̿̎̓̀̌͌̽̚͝e̷̢̨̡̡̨̧͍͙̘̰͖͇̺̥̤̬͇͕̹̖̰͖̹͍̙͎̜̻̭̲͙̾̓̆͂̓́͐̑͊͒̑̈̋̆͗̃̾̄̓̿͝͝͠';
 })
 
+// prevents form submission from reloading the page and generates navbar
+document.getElementById('nav-picker-form').addEventListener('submit', function() {
+    event.preventDefault();
+    
+    // TODO: 'generate' navbar here
+})
+
 // function that makes a message appear when it was previously invisible, uses parameter to identify ID from the html side
 function errMsg(errID) {
     document.getElementById(errID).style.opacity = 100;
 }
+
+// replace all characters with 'e' when trying to type in prompt in form
+document.getElementById('nav-type').addEventListener('input', (e) => {
+    e.target.value = e.target.value.replace(/\D/g, 'e'); 
+});
