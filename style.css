@@ -52,7 +52,6 @@ button {
 
 /* navbar */
 .navbar {
-    display: block;
     position: fixed;
 
     width: 100%;
@@ -60,10 +59,12 @@ button {
 
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
 
-    background-color: bisque;
+    background-color: hsl(33, 100%, 88%);
+
+    align-items: center;
 }
 
 #nav-links {

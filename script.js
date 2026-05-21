@@ -26,12 +26,12 @@ function btnReplace() {
 }
 
 // function for purple button, replaces text with glitched text
-document.getElementById("purple-btn").addEventListener("click", function() {
+document.getElementById("purple-btn").addEventListener("click", function purpleBtn() {
     document.getElementById("purple-btn").innerHTML = 'P̴̢̨̧̧̻̼̭͍̣̘̣̥̖̂̓́̀͆̊̃͌̎̈̌̀̀̾̈́͛̈́͑͌̒̕͜͝ͅư̵͎̓͛̆̃́̿̇̋̊̀͗̄̋̿͊͘͘͜r̵̢̮̯̱̪͔̖̫͇̣͇̭̻̹̫̗̙̯͚͕̜̻̻̹̭̹̫͓͖̤͊̋̆̓͒̽̏̋̀̇̃͛̌̀̂́͑͗̎̚͠͠ͅp̷̢̢̢̡̨̡̡̗̻̘͉͈̟̥̯̘̱͓̗͈̘̬͙̜̹̳͓̮͙̗̼͚̝̂͐̍̽͐̒̀̑̎̊́̄́̊̎̎̽̀̄͗̚̚̕͜͠͠l̴͕̙̑́̍̈́̈̿̐̐̿̎̓̀̌͌̽̚͝e̷̢̨̡̡̨̧͍͙̘̰͖͇̺̥̤̬͇͕̹̖̰͖̹͍̙͎̜̻̭̲͙̾̓̆͂̓́͐̑͊͒̑̈̋̆͗̃̾̄̓̿͝͝͠';
 })
 
 // prevents form submission from reloading the page and generates navbar
-document.getElementById('nav-picker-form').addEventListener('submit', function() {
+document.getElementById('nav-picker-form').addEventListener('submit', function genNavbar() {
     event.preventDefault();
     
     // TODO: 'generate' navbar here
