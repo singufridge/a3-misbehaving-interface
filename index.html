@@ -48,8 +48,9 @@
           <label for="nav-type">Type what kind of navbar you want, our state-of-the-art builder will generate one for you:</label><br>
           <input type="text" id="nav-type" name="nav-type" placeholder="eg. simple, stylish, blunt, rounded, etc." style="width: 40%;">
           <br>
-          <button>Generate my Navbar!</button>
         </form>
+        <button onclick="errMsg('err-navbar')">Generate my Navbar!</button>
+          <p id="err-navbar">Oops. Looks like your prompt overloaded our AI systems. We have gone ahead and generated a standard navbar for you.</p>
       </div>
     </div>
 

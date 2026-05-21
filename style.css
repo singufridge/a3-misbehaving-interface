@@ -49,3 +49,11 @@ button {
 .nav-picker {
     line-height: 2;
 }
+
+#err-navbar {
+    color: red;
+    font-size: 10pt;
+    line-height: 0.9;
+
+    opacity: 0;
+}
