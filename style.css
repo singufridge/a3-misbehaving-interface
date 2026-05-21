@@ -50,6 +50,28 @@ button {
     line-height: 2;
 }
 
+/* navbar */
+.navbar {
+    display: block;
+    position: fixed;
+
+    width: 100%;
+    height: fit-content;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    background-color: bisque;
+}
+
+#nav-links {
+    display: inline;
+    float: left;
+    list-style-type: none;
+}
+
 #err-navbar {
     color: red;
     font-size: 10pt;
