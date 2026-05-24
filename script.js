@@ -51,6 +51,12 @@ document.getElementById('nav-type').addEventListener('input', (e) => {
 
 // * NAV LINKS
 // prevents form submission from reloading the page and generates nav links
-document.getElementById('nav-pop-form').addEventListener('submit', function genNavLinks() {
+const navPopForm = document.getElementById('nav-pop-form');
+
+navPopForm.addEventListener('submit', function genNavLinks() {
     event.preventDefault();
+
+    const data = new FormData(navPopForm);
+    const linkText = data.get("nav-link-text");
+    console.log(linkText);
 })
