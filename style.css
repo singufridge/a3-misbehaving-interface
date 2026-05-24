@@ -55,7 +55,7 @@ form {
     position: fixed;
 
     width: 100%;
-    height: fit-content;
+    height: 80px;
 
     padding-left: 10%;
     padding-right: 10%;
@@ -67,10 +67,12 @@ form {
     /* opacity: 0; */
 }
 
-#nav-links {
+#nav-links li {
     display: inline;
     float: left;
     list-style-type: none;
+
+    margin-right: 30px;
 }
 
 #nav-links a {
