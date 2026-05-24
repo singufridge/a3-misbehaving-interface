@@ -11,10 +11,9 @@ function greenBtn() {
     document.body.style.color = `green`;
 }
 
-// add event listener for blue button, call btnReplace
+// function is called when clicking blue button, removes button and replaces it with an image of a blueberry
 document.getElementById("blue-btn").addEventListener("click", btnReplace)
 
-// function is called when clicking blue button, removes button and replaces it with an image of a blueberry
 function btnReplace() {
     document.getElementById("blue-btn").remove();
 
@@ -58,20 +57,22 @@ const navList = document.getElementById('nav-links')
 navPopForm.addEventListener('submit', function genNavLinks() {
     event.preventDefault();
 
+    // get form data, single out the text submission
     const data = new FormData(navPopForm);
     const linkText = data.get("nav-link-text");
 
+    // create list element, append to navbar
     const navLi = document.createElement('li');
     navList.appendChild(navLi);
 
+    // create a element, append to list item
     const navLink = document.createElement('a');
-    navLink.textContent = linkText;
-    navLink.classList.add("a-animated");
-    navLink.addEventListener("click", () => changeClass(navLink));
+    navLink.textContent = linkText; // text of new element matches the text submission
+    navLink.classList.add("a-animated"); //a dd class to 'a' element that causes it to be animated
+    navLink.addEventListener("click", () => changeClass(navLink)); // add onclick event listener to the generated item asynchronously
     navLi.appendChild(navLink);
 })
 
-function changeClass(navLink) {
+function changeClass(navLink) { // on click, remove css class that animates the link element
     navLink.classList.remove('a-animated');
-    console.log("removed")
 }
