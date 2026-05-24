@@ -75,6 +75,12 @@ form {
     margin-right: 30px;
 }
 
+@keyframes shakeAnimation {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(0px); }
+    20%, 40%, 60%, 80% { transform: translateX(1000px); }
+  }
+
 #nav-links a {
     text-decoration: none;
 
@@ -82,6 +88,13 @@ form {
     padding: 20px;
 
     color: black;
+
+    animation-name: shakeAnimation;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: both;
 }
 
 #nav-links a:hover {
