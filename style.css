@@ -26,6 +26,10 @@ button {
     cursor: pointer;
 }
 
+form {
+    line-height: 2;
+}
+
 /* classes */
 .builder {
     padding: 20%;
@@ -44,10 +48,6 @@ button {
     margin-right: 20px;
 
     padding: 5px;
-}
-
-.nav-picker {
-    line-height: 2;
 }
 
 /* navbar */
@@ -86,10 +86,12 @@ button {
     background-color: white;
 }
 
-#err-navbar {
+.err {
     color: red;
     font-size: 10pt;
     line-height: 0.9;
 
     opacity: 0;
 }
+
+/* navbar links */

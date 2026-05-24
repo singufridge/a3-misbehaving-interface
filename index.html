@@ -12,7 +12,7 @@
       <!-- TODO: will use javascript to procedurally add/append list items to navbar, list items will speed back and forth across the screen until clicked, then will stay still -->
       <ul id="nav-links">
         <li>
-            <a href=>Home</a>
+            <p>[Your Logo Here]</p>
         </li>
       </ul>
     </div>
@@ -54,21 +54,28 @@
         <form id="nav-picker-form">
             <label for="nav-type">Enter a prompt for what style of navbar you want, our state-of-the-art builder will generate one for you:</label><br>
 
-            <input type="text" id="nav-type" name="nav-type" placeholder="eg. simple, stylish, blunt, rounded, etc." style="width: 40%;">
+            <input type="text" id="nav-type" name="nav-type" placeholder="Eg. simple, stylish, blunt, rounded, etc." style="width: 40%;">
             <br>
 
             <button onclick="errMsg('err-navbar')">Generate my Navbar!</button>
-            <p id="err-navbar">Oops. Our AI systems couldn't understand your prompt. We have gone ahead and generated a standard, boring navbar for you.</p>
+            <p id="err-navbar" class="err">Oops. Our AI systems couldn't understand your prompt. We have gone ahead and generated a standard, boring navbar for you.</p>
         </form>
       </div>
     
     <!-- Navbar populator -->
     <h4>Your navbar's looking a little empty. Let's add some links!</h4>
+    <div class="nav-pop">
+        <form id="nav-pop-form">
+            <label for="nav-link-text">Enter the page you would like your link to go to:</label><br>
+
+            <input type="text" id="nav-link-text" name="nav-link-text" placeholder="Eg. products, about, contact, etc." style="width: 40%;">
+            <br>
+
+            <button onclick="errMsg('err-nav-links')">Generate my Links!</button>
+            <p id="err-nav-links" class="err">Oh dear, looks like your link is on the run! Click it to make it stay still.</p>
+        </form>
     </div>
-
-    <footer>
-
-    </footer>
+    </div>
   </body>
   <script src="script.js"></script>
 </html>

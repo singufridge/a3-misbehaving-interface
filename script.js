@@ -1,6 +1,6 @@
 // button functions
 
-// * BACKGROUND PICKER *
+// * BACKGROUND PICKER
 // changes background image
 function bgChange(url) {
     document.body.style.backgroundImage = `url(https://` + url + `)`;
@@ -31,8 +31,8 @@ document.getElementById("purple-btn").addEventListener("click", function purpleB
     document.getElementById("purple-btn").innerHTML = 'P̴̢̨̧̧̻̼̭͍̣̘̣̥̖̂̓́̀͆̊̃͌̎̈̌̀̀̾̈́͛̈́͑͌̒̕͜͝ͅư̵͎̓͛̆̃́̿̇̋̊̀͗̄̋̿͊͘͘͜r̵̢̮̯̱̪͔̖̫͇̣͇̭̻̹̫̗̙̯͚͕̜̻̻̹̭̹̫͓͖̤͊̋̆̓͒̽̏̋̀̇̃͛̌̀̂́͑͗̎̚͠͠ͅp̷̢̢̢̡̨̡̡̗̻̘͉͈̟̥̯̘̱͓̗͈̘̬͙̜̹̳͓̮͙̗̼͚̝̂͐̍̽͐̒̀̑̎̊́̄́̊̎̎̽̀̄͗̚̚̕͜͠͠l̴͕̙̑́̍̈́̈̿̐̐̿̎̓̀̌͌̽̚͝e̷̢̨̡̡̨̧͍͙̘̰͖͇̺̥̤̬͇͕̹̖̰͖̹͍̙͎̜̻̭̲͙̾̓̆͂̓́͐̑͊͒̑̈̋̆͗̃̾̄̓̿͝͝͠';
 })
 
-// * NAV PICKER *
-// prevents form submission from reloading the page and generates navbar
+// * NAV PICKER
+// prevents form submission from reloading the page and reveals navbar
 document.getElementById('nav-picker-form').addEventListener('submit', function genNavbar() {
     event.preventDefault();
     
@@ -48,3 +48,9 @@ function errMsg(errID) {
 document.getElementById('nav-type').addEventListener('input', (e) => {
     e.target.value = e.target.value.replace(/\D/g, 'e'); 
 });
+
+// * NAV LINKS
+// prevents form submission from reloading the page and generates nav links
+document.getElementById('nav-pop-form').addEventListener('submit', function genNavLinks() {
+    event.preventDefault();
+})
