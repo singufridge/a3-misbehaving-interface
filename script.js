@@ -76,11 +76,11 @@ navPopForm.addEventListener('submit', function genNavLinks() {
     navLi.appendChild(navLink);
 })
 
-let clickCount = 0;
+let clickCount = 1;
 function changeClass(navLink) { // on click, remove css class that animates the link element  
     navLink.classList.remove('a-animated');
 
-    document.body.style.transform = 'rotate(' + (clickCount + 1 * 5) + 'deg)';
+    document.body.style.transform = 'rotate(' + (clickCount * 6) + 'deg)';
 
-    clickCount += 2;
+    clickCount++;
 }
