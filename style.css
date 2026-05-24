@@ -24,6 +24,12 @@ h4 {
 
 button {
     cursor: pointer;
+    border-radius: 5px;
+    background-color: #e4e4e4;
+}
+
+button:hover {
+    background-color: #c5edee;
 }
 
 form {
@@ -47,7 +53,7 @@ form {
     margin-left: 20px;
     margin-right: 20px;
 
-    padding: 5px;
+    padding: 10px;
 }
 
 /* navbar */
