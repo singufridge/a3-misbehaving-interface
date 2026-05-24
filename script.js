@@ -26,8 +26,11 @@ function btnReplace() {
 }
 
 // function for purple button, replaces text with glitched text
-document.getElementById("purple-btn").addEventListener("click", function purpleBtn() {
-    document.getElementById("purple-btn").innerHTML = 'P̴̢̨̧̧̻̼̭͍̣̘̣̥̖̂̓́̀͆̊̃͌̎̈̌̀̀̾̈́͛̈́͑͌̒̕͜͝ͅư̵͎̓͛̆̃́̿̇̋̊̀͗̄̋̿͊͘͘͜r̵̢̮̯̱̪͔̖̫͇̣͇̭̻̹̫̗̙̯͚͕̜̻̻̹̭̹̫͓͖̤͊̋̆̓͒̽̏̋̀̇̃͛̌̀̂́͑͗̎̚͠͠ͅp̷̢̢̢̡̨̡̡̗̻̘͉͈̟̥̯̘̱͓̗͈̘̬͙̜̹̳͓̮͙̗̼͚̝̂͐̍̽͐̒̀̑̎̊́̄́̊̎̎̽̀̄͗̚̚̕͜͠͠l̴͕̙̑́̍̈́̈̿̐̐̿̎̓̀̌͌̽̚͝e̷̢̨̡̡̨̧͍͙̘̰͖͇̺̥̤̬͇͕̹̖̰͖̹͍̙͎̜̻̭̲͙̾̓̆͂̓́͐̑͊͒̑̈̋̆͗̃̾̄̓̿͝͝͠';
+const purpleBtn = document.getElementById("purple-btn");
+
+purpleBtn.addEventListener("click", function purpleBtnChange() {
+    purpleBtn.innerHTML = 'P̴̢̨̧̧̻̼̭͍̣̘̣̥̖̂̓́̀͆̊̃͌̎̈̌̀̀̾̈́͛̈́͑͌̒̕͜͝ͅư̵͎̓͛̆̃́̿̇̋̊̀͗̄̋̿͊͘͘͜r̵̢̮̯̱̪͔̖̫͇̣͇̭̻̹̫̗̙̯͚͕̜̻̻̹̭̹̫͓͖̤͊̋̆̓͒̽̏̋̀̇̃͛̌̀̂́͑͗̎̚͠͠ͅp̷̢̢̢̡̨̡̡̗̻̘͉͈̟̥̯̘̱͓̗͈̘̬͙̜̹̳͓̮͙̗̼͚̝̂͐̍̽͐̒̀̑̎̊́̄́̊̎̎̽̀̄͗̚̚̕͜͠͠l̴͕̙̑́̍̈́̈̿̐̐̿̎̓̀̌͌̽̚͝e̷̢̨̡̡̨̧͍͙̘̰͖͇̺̥̤̬͇͕̹̖̰͖̹͍̙͎̜̻̭̲͙̾̓̆͂̓́͐̑͊͒̑̈̋̆͗̃̾̄̓̿͝͝͠';
+    purpleBtn.style.color = 'purple';
 })
 
 // * NAV PICKER
@@ -73,6 +76,11 @@ navPopForm.addEventListener('submit', function genNavLinks() {
     navLi.appendChild(navLink);
 })
 
-function changeClass(navLink) { // on click, remove css class that animates the link element
+let clickCount = 0;
+function changeClass(navLink) { // on click, remove css class that animates the link element  
     navLink.classList.remove('a-animated');
+
+    document.body.style.transform = 'rotate(' + (clickCount + 1 * 5) + 'deg)';
+
+    clickCount += 2;
 }
