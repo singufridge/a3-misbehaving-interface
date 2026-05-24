@@ -51,7 +51,7 @@ button {
 }
 
 /* navbar */
-.navbar {
+#navbar {
     position: fixed;
 
     width: 100%;

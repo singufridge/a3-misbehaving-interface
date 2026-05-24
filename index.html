@@ -7,7 +7,8 @@
         <link rel="stylesheet" href="style.css">
     </head>
   <body>
-    <div class="navbar">
+    <!-- Navbar section, starts out at 0 opacity -->
+    <div id="navbar">
       <!-- TODO: will use javascript to procedurally add/append list items to navbar, list items will speed back and forth across the screen until clicked, then will stay still -->
       <ul id="nav-links">
         <li>
@@ -16,12 +17,14 @@
       </ul>
     </div>
 
+    <!-- Everything used to "build" the website -->
     <div class="builder">
       <h1>Build-A-Site</h1>
       <h3>
         Build and customize your own website! Easy and simple :D
       </h3>
       
+      <!-- Background picker -->
       <h4>First, let's choose a background:</h4>
       <div class="buttons">
         <button onclick="bgChange('img.freepik.com/premium-vector/red-word-text-red-color-white-background_956226-107.jpg?semt=ais_hybrid&w=740&q=80')">
@@ -45,6 +48,7 @@
           Purple</button>
       </div>
 
+      <!-- Navbar picker -->
       <h4>Great! Now let's choose a navigation bar:</h4>
       <div class="nav-picker">
         <form id="nav-picker-form">
@@ -57,6 +61,9 @@
             <p id="err-navbar">Oops. Our AI systems couldn't understand your prompt. We have gone ahead and generated a standard, boring navbar for you.</p>
         </form>
       </div>
+    
+    <!-- Navbar populator -->
+    <h4>Your navbar's looking a little empty. Let's add some links!</h4>
     </div>
 
     <footer>

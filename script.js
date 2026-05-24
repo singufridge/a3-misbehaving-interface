@@ -1,5 +1,6 @@
 // button functions
 
+// * BACKGROUND PICKER *
 // changes background image
 function bgChange(url) {
     document.body.style.backgroundImage = `url(https://` + url + `)`;
@@ -30,11 +31,12 @@ document.getElementById("purple-btn").addEventListener("click", function purpleB
     document.getElementById("purple-btn").innerHTML = 'P̴̢̨̧̧̻̼̭͍̣̘̣̥̖̂̓́̀͆̊̃͌̎̈̌̀̀̾̈́͛̈́͑͌̒̕͜͝ͅư̵͎̓͛̆̃́̿̇̋̊̀͗̄̋̿͊͘͘͜r̵̢̮̯̱̪͔̖̫͇̣͇̭̻̹̫̗̙̯͚͕̜̻̻̹̭̹̫͓͖̤͊̋̆̓͒̽̏̋̀̇̃͛̌̀̂́͑͗̎̚͠͠ͅp̷̢̢̢̡̨̡̡̗̻̘͉͈̟̥̯̘̱͓̗͈̘̬͙̜̹̳͓̮͙̗̼͚̝̂͐̍̽͐̒̀̑̎̊́̄́̊̎̎̽̀̄͗̚̚̕͜͠͠l̴͕̙̑́̍̈́̈̿̐̐̿̎̓̀̌͌̽̚͝e̷̢̨̡̡̨̧͍͙̘̰͖͇̺̥̤̬͇͕̹̖̰͖̹͍̙͎̜̻̭̲͙̾̓̆͂̓́͐̑͊͒̑̈̋̆͗̃̾̄̓̿͝͝͠';
 })
 
+// * NAV PICKER *
 // prevents form submission from reloading the page and generates navbar
 document.getElementById('nav-picker-form').addEventListener('submit', function genNavbar() {
     event.preventDefault();
     
-    // TODO: 'generate' navbar here
+    document.getElementById("navbar").style.opacity = 100;
 })
 
 // function that makes a message appear when it was previously invisible, uses parameter to identify ID from the html side
