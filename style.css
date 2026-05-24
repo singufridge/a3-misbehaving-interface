@@ -88,7 +88,9 @@ form {
     padding: 20px;
 
     color: black;
+}
 
+.a-animated {
     animation-name: shakeAnimation;
     animation-duration: 3s;
     animation-timing-function: linear;

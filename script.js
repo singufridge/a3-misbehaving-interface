@@ -66,5 +66,12 @@ navPopForm.addEventListener('submit', function genNavLinks() {
 
     const navLink = document.createElement('a');
     navLink.textContent = linkText;
+    navLink.classList.add("a-animated");
+    navLink.addEventListener("click", () => changeClass(navLink));
     navLi.appendChild(navLink);
 })
+
+function changeClass(navLink) {
+    navLink.classList.remove('a-animated');
+    console.log("removed")
+}
