@@ -63,6 +63,8 @@ button {
     background-color: hsl(33, 100%, 88%);
 
     align-items: center;
+
+    opacity: 0;
 }
 
 #nav-links {
