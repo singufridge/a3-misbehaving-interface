@@ -84,3 +84,9 @@ function changeClass(navLink) { // on click, remove css class that animates the 
 
     clickCount++;
 }
+
+// * PUBLISH BUTTON
+// grows continuously bigger while you hover over it
+const pubBtn = document.getElementById('pub-btn');
+
+let isHovering = false;

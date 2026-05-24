@@ -61,19 +61,27 @@
         </form>
       </div>
     
-    <!-- Navbar populator -->
-    <h4>Your navbar's looking a little empty. Let's add some links!</h4>
-    <div class="nav-pop">
-        <form id="nav-pop-form">
-            <label for="nav-link-text">Enter the page you would like your link to go to:</label><br>
+        <!-- Navbar populator -->
+        <h4>Your navbar's looking a little empty. Let's add some links!</h4>
+        <div class="nav-pop">
+            <form id="nav-pop-form">
+                <label for="nav-link-text">Enter the page you would like your link to go to:</label><br>
 
-            <input type="text" id="nav-link-text" name="nav-link-text" placeholder="Eg. Products, About, Contact, etc." style="width: 40%;">
-            <br>
+                <input type="text" id="nav-link-text" name="nav-link-text" placeholder="Eg. Products, About, Contact, etc." style="width: 40%;">
+                <br>
 
-            <button onclick="errMsg('err-nav-links')">Generate my Links!</button>
-            <p id="err-nav-links" class="err">Oh dear, looks like your link is on the run! Click it to make it stay still.</p>
-        </form>
-    </div>
+                <button onclick="errMsg('err-nav-links')">Generate my Links!</button>
+                <p id="err-nav-links" class="err">Oh dear, looks like your link is on the run! Click it to make it stay still.</p>
+            </form>
+        </div>
+
+        <!-- Publish button -->
+        <h4>Looking good! Finally, click this button to publish your website!</h4>
+        <div class="publish">
+            <img>
+            <button id="pub-btn">Publish Me!</button>
+            <img>
+        </div>
     </div>
   </body>
   <script src="script.js"></script>

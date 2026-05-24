@@ -121,4 +121,9 @@ form {
     opacity: 0;
 }
 
-/* navbar links */
+/* publish section */
+.publish {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
