@@ -130,8 +130,15 @@ form {
 
 #pub-btn {
     font-size: 20pt;
-    
+
     padding: 10px;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.red-arrow {
+    height: 60px;
+
+    padding-left: 40px;
+    padding-right: 40px;
 }

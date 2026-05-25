@@ -96,4 +96,7 @@ pubBtn.addEventListener('click', function divRandomDelete() {
 
     randomDiv.remove();
     console.log(`Removed ${randomDiv}`);
+
+    pubBtn.textContent = '>:)';
+    pubBtn.style.color = 'red'; // turns into a devil >:)
 })
