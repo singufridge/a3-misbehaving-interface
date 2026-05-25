@@ -1,5 +1,3 @@
-// button functions
-
 // * BACKGROUND PICKER
 // changes background image
 function bgChange(url) {
@@ -12,18 +10,18 @@ function greenBtn() {
 }
 
 // function is called when clicking blue button, removes button and replaces it with an image of a blueberry
-document.getElementById("blue-btn").addEventListener("click", btnReplace)
+const blueBtn = document.getElementById("blue-btn");
 
-function btnReplace() {
-    document.getElementById("blue-btn").remove();
+blueBtn.addEventListener("click", function btnReplace() {
+    blueBtn.remove();
 
-    const blueImg = new Image(30, 27.6);
+    const blueImg = new Image(40, 40);
 
     blueImg.src = 'https://www.boeschbodenspies.com/wp-content/uploads/product-blueberry.png';
     blueImg.alt = 'Blueberry';
 
     document.getElementById("blue-btn-div").appendChild(blueImg);
-}
+})
 
 // function for purple button, replaces text with glitched text
 const purpleBtn = document.getElementById("purple-btn");
@@ -68,15 +66,15 @@ navPopForm.addEventListener('submit', function genNavLinks() {
     const navLi = document.createElement('li');
     navList.appendChild(navLi);
 
-    // create a element, append to list item
+    // create 'a' element, append to list item
     const navLink = document.createElement('a');
     navLink.textContent = linkText; // text of new element matches the text submission
-    navLink.classList.add("a-animated"); //a dd class to 'a' element that causes it to be animated
+    navLink.classList.add("a-animated"); //add class to 'a' element that causes it to be animated
     navLink.addEventListener("click", () => changeClass(navLink)); // add onclick event listener to the generated item asynchronously
     navLi.appendChild(navLink);
 })
 
-// on click, remove css class that animates the link element, also rotate the body tag
+// when clicking a nav link, remove css class that animates the link element, also rotate the body tag
 let clickCount = 1;
 function changeClass(navLink) {
     navLink.classList.remove('a-animated');
@@ -87,7 +85,7 @@ function changeClass(navLink) {
 }
 
 // * PUBLISH BUTTON
-// randomly deletes div when button pushed
+// randomly deletes div when 'publish me' button is pushed
 const pubBtn = document.getElementById('pub-btn');
 
 pubBtn.addEventListener('click', function divRandomDelete() {
