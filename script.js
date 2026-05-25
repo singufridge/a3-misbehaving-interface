@@ -86,7 +86,11 @@ function changeClass(navLink) { // on click, remove css class that animates the 
 }
 
 // * PUBLISH BUTTON
-// grows continuously bigger while you hover over it
+// randomly deleted div when pushed
 const pubBtn = document.getElementById('pub-btn');
 
-let isHovering = false;
+const divArray = document.querySelectorAll('div');
+
+pubBtn.addEventListener('click', function divRandomDelete() {
+    console.log(divArray);
+})
