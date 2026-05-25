@@ -127,3 +127,11 @@ form {
     flex-direction: row;
     justify-content: center;
 }
+
+#pub-btn {
+    font-size: 20pt;
+    
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

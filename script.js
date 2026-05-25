@@ -3,7 +3,7 @@
 // * BACKGROUND PICKER
 // changes background image
 function bgChange(url) {
-    document.body.style.backgroundImage = `url(https://` + url + `)`;
+    document.body.style.backgroundImage = `url(https://${url})`;
 }
 
 // changes text colour when pushing the green button
@@ -76,21 +76,24 @@ navPopForm.addEventListener('submit', function genNavLinks() {
     navLi.appendChild(navLink);
 })
 
+// on click, remove css class that animates the link element, also rotate the body tag
 let clickCount = 1;
-function changeClass(navLink) { // on click, remove css class that animates the link element  
+function changeClass(navLink) {
     navLink.classList.remove('a-animated');
 
-    document.body.style.transform = 'rotate(' + (clickCount * 6) + 'deg)';
+    document.body.style.transform = `rotate(${clickCount * 6}deg)`;
 
     clickCount++;
 }
 
 // * PUBLISH BUTTON
-// randomly deleted div when pushed
+// randomly deletes div when button pushed
 const pubBtn = document.getElementById('pub-btn');
 
-const divArray = document.querySelectorAll('div');
-
 pubBtn.addEventListener('click', function divRandomDelete() {
-    console.log(divArray);
+    let divArray = document.querySelectorAll('div'); // fetches all divs on the page
+    let randomDiv = divArray[Math.floor(Math.random() * divArray.length)]; //randomly selects one
+
+    randomDiv.remove();
+    console.log(`Removed ${randomDiv}`);
 })
